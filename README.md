@@ -74,7 +74,7 @@ $ export PATH="/path/to/anaconda/bin:$PATH"
 - Change Directory to your project older, e.g. `cd my_github_projects`
 - Clone the Github Project inside this folder with Git Bash (Terminal) via:
 ```
-$ git clone https://github.com/ddhartma/Around-The-World-Image-Classifier.git
+$ git clone https://github.com/ddhartma/Spotify-dataset-analysis-160kTracks-1921-2020.git
 ```
 
 - Change Directory

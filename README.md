@@ -11,7 +11,7 @@ During the dataset analysis of a set of questions came up:
 4. Which actual top artists write/have the most popular songs?
 5. How do you become a famous song writer?
 
-The answers to this CRISP questions can be found in the jupyter notebook. Or on my medium blog post.
+The answers to this CRISP questions can be found in the jupyter notebook. Or on my [medium](https://hartmann-david.medium.com/how-do-you-become-a-famous-song-writer-ff3a4668a8c8) blog post.
 
 ## DataFrame Summary:
 - The dataset splits into 170653 rows and 19 columns. Those 19 data columns are divided into 13 numerical and 6 categorical columns.

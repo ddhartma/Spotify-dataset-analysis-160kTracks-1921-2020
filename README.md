@@ -163,6 +163,9 @@ jupyter notebook Spotifiy_160k_1921_2020_analysis.ipynb
   - plot_df_pie
 
   This module simplifies plotting line, bar and pie plots using matplotlib. It is called from the notebook and shortens the code for specially designed plots to a 'one code line'. This is done via default settings and overwriting them only when needed.  
+
+- **sklearn_linearRegression_result.png** - an image of the sklearn Linear Regression result. It shows the weights for each interesting input feature as a bar plot.
+
 - **README.md** - the readme file of this repository.
 
 ## Acknowledgments

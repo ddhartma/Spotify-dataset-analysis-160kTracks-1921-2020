@@ -124,7 +124,7 @@ $ git clone https://github.com/ddhartma/Spotify-dataset-analysis-160kTracks-1921
 $ cd Spotify-dataset-analysis-160kTracks-1921-2020
 ```
 
-- Create a new Python environment via the provided yml file. Inside Git Bash (Terminal) write:
+- Create a new Python environment, e.g. spotify_analysis. Inside Git Bash (Terminal) write:
 ```
 $ conda create --name spotify_analysis
 ```

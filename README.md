@@ -4,9 +4,22 @@
 In this study based on a Spotify Dataset from Kaggle with 160k tracks released between 1921 and 2020 a set of input features and their dependence on song popularity has been studied.  
 This [dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks) can be found on the Kaggle webpage.
 
-## Business Understanding (aim of this study)
+## Outline
+-  [CRISP-DM Analysis](#CRISP_DM)
+    - [Business Understanding](#Business_Understanding)
+    - [DataFrame Understanding](#DataFrame_Understanding)
+    - [DataFrame Preparation](#DataFrame_Preparation)
+    - [Modeling](#Modeling)
+    - [Evaluation](#Evaluation)
+- [Read my blog post under medium](#medium_blog)
+- [Setup Instructions](#Setup_Instructions)
+- [Acknowledgments](#Acknowledgments)
+- [Further Links](#Further_Links)
+
+## CRISP-DM Analysis <a name="CRISP_DM"></a>
 The aim of this study was to analyze via CRISP-DM (CROSS INDUSTRY STANDARD PROCESS FOR DATA MINING) if one can build model which can predict song popularities based on the given dataset features.
 
+## Business Understanding (aim of this study) <a name="Business_Understanding"></a>
 In detail, the CRISP-DM questions were:
 
 1. **Question 1:** In order to write a popular song, is the key and mode of the song important?
@@ -15,7 +28,7 @@ In detail, the CRISP-DM questions were:
 4. **Question 4:** How do you become a famous song writer?
 5. **Question 5:** What are those songs with high popularity but zero tempo, zero danceability and zero speechiness?
 
-## DataFrame Overview
+## DataFrame Understanding <a name="DataFrame_Understanding"></a>
 - The dataset splits into 170653 rows and 19 columns. Those 19 data columns are divided into 13 numerical and 6 categorical columns.
 - **numerical** columns:
     - acousticness: The relative metric of the track being acoustic, (Ranges from 0 to 1)
@@ -41,7 +54,7 @@ In detail, the CRISP-DM questions were:
     - mode: The binary value representing whether the track starts with a major (1) chord progression or a minor (0)
     - explicit: The binary value whether the track contains explicit content or not, (0 = No explicit content, 1 = Explicit content)
 
-## Data understanding and preparation
+## DataFrame Preparation <a name="DataFrame_Preparation"></a>
 The notebook **Spotifiy_160k_1921_2020_analysis.ipynb** contains the dataset investigation steps and and all the results.
 
 - **NaN values:** There are no real NaN values
@@ -64,11 +77,11 @@ The notebook **Spotifiy_160k_1921_2020_analysis.ipynb** contains the dataset inv
 
 For these categorical variables dummy variables are needed to build a predicting model.
 
-## Modeling:
+## Modeling: <a name="Modeling"></a>
 - The main modeling approach in this Jupyter notebook is done based on a sklearn Linear Regression. There is still room for optimization as the R-squared value (a measure of how much of the data variability can be explained by the model) is only 66% for training and 63% for testing.
 - As discussed in the notebook there are nonlinear tendencies for valence, acousticness, danceability, energy, instrumentalness and liveness. In future approaches linearization steps are needed if one will keep going on with linear regressions or deep learning nonlinear model should be tested. Some preliminary work has been done on that, but it still needs optimization.
 
-## Evaluation (most important results):
+## Evaluation (most important results): <a name="Evaluation"></a>
 - **Answer to Question 1:** Although there seems to be a slight preference for C# minor we have seen that primary key and mode of a song does not play a major role with respect to song popularity
 
 - **Answer to Question 2:** The top winners were: Elvis Presley, Chet Baker, Chuck Berry and Frank Sinatra.
@@ -86,11 +99,11 @@ The sklearn Linear regression result (see question 4):
 
 
 
-## Read my blog post under medium
+## Read my blog post under medium <a name="medium_blog"></a>
 
 The answers to this CRISP questions and further information can be found in the jupyter notebook. Or check out my [medium](https://hartmann-david.medium.com/how-do-you-become-a-famous-song-writer-ff3a4668a8c8) blog post.
 
-## Setup Instructions
+## Setup Instructions <a name="Setup_Instructions"></a>
 
 The following is a brief set of instructions on setting up a managed notebook instance, from which the notebooks can be completed and run.
 
@@ -168,6 +181,22 @@ jupyter notebook Spotifiy_160k_1921_2020_analysis.ipynb
 
 - **README.md** - the readme file of this repository.
 
-## Acknowledgments
+## Acknowledgments <a name="Acknowledgments"></a>
 * This is a project of the Udacity Nanodegree program 'Data Science'. Please check this [link](https://www.udacity.com) for more information.
 * The categorical AritistsTransformer class in this work was developed by [Guy Kahana & Anat Peled](https://www.kaggle.com/anatpeled/spotify-popularity-prediction/comments)
+
+## Further Links  <a name="Further_Links"></a>
+Git/Github
+* [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
+* [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+* [5 types of Git workflows](https://buddy.works/blog/5-types-of-git-workflows)
+
+Docstrings, DRY, PEP8
+* [Python Docstrings](https://www.geeksforgeeks.org/python-docstrings/)
+* [DRY](https://www.youtube.com/watch?v=IGH4-ZhfVDk)
+* [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
+
+Data Visualization
+* [10 Python Data Visualization Libraries for Any Field | Mode](https://mode.com/blog/python-data-visualization-libraries/)
+* [5 Quick and Easy Data Visualizations in Python with Code](https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f)
+* [The Best Python Data Visualization Libraries](https://www.fusioncharts.com/blog/best-python-data-visualization-libraries/)

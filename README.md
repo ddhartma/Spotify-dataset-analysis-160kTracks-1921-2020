@@ -142,6 +142,11 @@ $ cd Spotify-dataset-analysis-160kTracks-1921-2020
 $ conda create --name spotify_analysis
 ```
 
+- Activate the installed spotify_analysis environment via
+```
+$ conda activate spotify_analysis
+```
+
 - Install the following packages (via pip or conda)
 ```
 numpy = 1.17.4
@@ -155,11 +160,6 @@ scikit-learn = 0.21.2
 - Check the environment installation via
 ```
 $ conda env list
-```
-
-- Activate the installed spotify_analysis environment via
-```
-$ conda activate spotify_analysis
 ```
 
 ### Open and run the notebook
